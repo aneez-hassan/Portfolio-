@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aneez Hassan - Robotics & AI Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+         :root {
+            --bg: #f4f7fb;
+            --text: #1d1f27;
+            --accent: #4f46e5;
+            --card: #ffffff;
+            --muted: #555;
+        }
+        
+        [data-theme="dark"] {
+            --bg: #1d1f27;
+            --text: #f4f7fb;
+            --accent: #818cf8;
+            --card: #2a2d3a;
+            --muted: #aaa;
+        }
+        
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            transition: background 0.3s, color 0.3s;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--card);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent);
+        }
+        
+        .theme-toggle {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: var(--text);
+        }
+        
+        section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        h1,
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 120px 20px 80px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--muted);
+        }
+        
+        .contact a {
+            margin: 0 10px;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .skills-grid,
+        .projects-grid,
+        .cert-grid,
+        .achievements-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        
+        .card {
+            background: var(--card);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: var(--card);
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: var(--accent);
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #3730a3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Dark/Light Toggle -->
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#achievements">Achievements</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Aneez Hassan</h1>
+        <p class="subtitle">Robotics & Automation Engineer | AI & ML Enthusiast</p>
+        <div class="contact">
+            <a href="mailto:aneezhassan99@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="tel:+917411130137"><i class="fas fa-phone"></i> Call</a>
+            <a href="https://github.com/aneez-hassan" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/aneezhassan99" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="resume.pdf" download class="btn"><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Engineering student skilled in C++, Python, IoT, ROS, and Machine Learning, supported by hands-on experience in AI, robotics, automation, and simulation projects. Passionate about applying technical knowledge to solve real-world problems and exploring
+            emerging technologies.
+        </p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+            <h3>BE - Robotics & Automation (2022 – 2026)</h3>
+            <p>Sahyadri College of Engineering and Management, Mangaluru</p>
+            <p>CGPA: 8.00</p>
+        </div>
+        <div class="card">
+            <h3>PUC - PCMB (2020 – 2022)</h3>
+            <p>Mahatma Gandhi Memorial College, Udupi</p>
+            <p>Percentage: 82.66%</p>
+        </div>
+        <div class="card">
+            <h3>SSLC (2019 – 2020)</h3>
+            <p>AL-Ihsan Academy School, Muloor</p>
+            <p>Percentage: 93.76%</p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="card">
+                <h3>Programming & Tools</h3>
+                <p>Python, C++, MATLAB, ROS, OpenCV, TensorFlow, PyTorch, Scikit-learn, Power BI</p>
+            </div>
+            <div class="card">
+                <h3>AI & Machine Learning</h3>
+                <p>Generative AI, NLP, Computer Vision, Neural Networks, Model Fine-Tuning, SVM, Data Analysis</p>
+            </div>
+            <div class="card">
+                <h3>Robotics & Simulation</h3>
+                <p>Forward & Inverse Kinematics, Autonomous Systems, Robot Simulation, SolidWorks, ANSYS, Fusion 360</p>
+            </div>
+            <div class="card">
+                <h3>Mechanical & QA</h3>
+                <p>CAD Design, FEA, Stress Analysis, Quality Control, Industrial Automation, Mechatronics</p>
+            </div>
+            <div class="card">
+                <h3>Other Skills</h3>
+                <p>Project Management, Problem-Solving, Research, Team Collaboration</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="card">
+            <h3>Machine Learning Intern – Skillcraft Technology</h3>
+            <p>Aug 2025 – Sept 2025</p>
+            <ul>
+                <li>Developed and tested ML models for data analysis and prediction tasks.</li>
+                <li>Applied regression, classification, and clustering using Python.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Generative AI Intern – Prodigy Infotech</h3>
+            <ul>
+                <li>Worked on Generative AI, LLMs, and prompt engineering.</li>
+                <li>Gained practical exposure to AI-driven automation.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Python Programming Intern – Oasis Infobyte</h3>
+            <ul>
+                <li>Built beginner-level projects like Voice Assistant and Weather App.</li>
+                <li>Used Python, APIs, and GitHub version control.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Founder & Tutor – Gradeup Coaching Class (2020 – 2025)</h3>
+            <ul>
+                <li>Taught SSLC, PUC, and KCET students for 5+ years.</li>
+                <li>Developed strong mentoring and leadership skills.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="card">
+                <h3>Intelligent Material Identification</h3>
+                <p>AI model to detect materials and predict mechanical properties.</p>
+            </div>
+            <div class="card">
+                <h3>Fine-tuning GPT-2</h3>
+                <p>Custom dataset fine-tuning for context-aware text generation.</p>
+            </div>
+            <div class="card">
+                <h3>Hand Gesture Recognition</h3>
+                <p>Computer vision model to classify real-time hand gestures.</p>
+            </div>
+            <div class="card">
+                <h3>5 DOF Robot Kinematics</h3>
+                <p>Implemented forward & inverse kinematics for robot control.</p>
+            </div>
+            <div class="card">
+                <h3>Autonomous Grass Cutting Machine</h3>
+                <p>Designed mechatronic system integrating sensors & motors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="cert-grid">
+            <div class="card">AINNOVATION 2025 – Microsoft</div>
+            <div class="card">AI Engineer – OneRoadmap</div>
+            <div class="card">Generative AI – Edureka</div>
+            <div class="card">Google Cloud GenAI Courses</div>
+            <div class="card">Think Again Lab – Robotics & AI</div>
+            <div class="card">ROS 2 – Infosys</div>
+            <div class="card">IoT – Cisco</div>
+            <div class="card">Mechatronics – IIT Roorkee</div>
+            <div class="card">Machine Learning – Amii</div>
+            <div class="card">Python for AI – IBM</div>
+            <div class="card">Project Management – Google</div>
+            <div class="card">Automation & Robotics – Skillsoft</div>
+            <div class="card">ANSYS Mechanical – ANSYS</div>
+            <div class="card">OpenCV Bootcamps</div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements">
+        <h2>Achievements & Hackathons</h2>
+        <div class="achievements-grid">
+            <div class="card">QUEST 2026 Hackathon – Lumen</div>
+            <div class="card">Robotics & Controls Simulation – Johnson & Johnson</div>
+            <div class="card">GenAI Data Analytics Simulation – Tata</div>
+            <div class="card">Advanced Manufacturing QC Simulation – Moreton Bay</div>
+            <div class="card">Operations Simulation – Siemens</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Aneez Hassan | Robotics & AI Engineer</p>
+        <a href="mailto:aneezhassan99@gmail.com" class="btn">Hire Me</a>
+        <a href="https://github.com/aneez-hassan" target="_blank" class="btn">View My Work</a>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.dataset.theme = body.dataset.theme === "dark" ? "light" : "dark";
+        }
+    </script>
+</body>
+
+</html>
